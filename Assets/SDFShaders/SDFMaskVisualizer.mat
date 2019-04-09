@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: SDFMaskVisualizer
+  m_Shader: {fileID: 4800000, guid: c20a729f48dd054409e75d1c5a56fad9, type: 3}
+  m_ShaderKeywords: _INVERTMASK_ON
+  m_LightmapFlags: 0
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _SDF:
+        m_Texture: {fileID: 4359303275743499665, guid: 9347007cf4259bd40a79044b49f5f7eb,
+          type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture0:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _Cutoff: 0.5
+    - _Falloff: 0.01
+    - _Flip: 0
+    - _InvertMask: 1
+    - _Offset: -0.0162
+    - _Sharpness: 141.7
+    - _UseTransparency: 0
+    - __dirty: 0
+    m_Colors:
+    - _SDFCenter: {r: -10, g: 0, b: 0, a: 0}
+    - _SDFExtents: {r: 5, g: 5, b: 5, a: 0}

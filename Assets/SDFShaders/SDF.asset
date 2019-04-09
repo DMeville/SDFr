@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78b2425a2284af743826c689403a4924, type: 3}
+  m_Name: SDF
+  m_EditorClassIdentifier: 
+  m_functionInfo: "// Made with Amplify Shader Editor\n// Available at the Unity Asset
+    Store - http://u3d.as/y3X \n/*ASEBEGIN\nVersion=16400\n1927;57;1586;1005;658.3472;559.0725;1;True;False\nNode;AmplifyShaderEditor.FunctionInput;19;783.9528,61.19873;Float;False;SDFOffset;1;3;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SamplerNode;3;365.1071,-149.0966;Float;True;Property;_TextureSample0;Texture
+    Sample 0;1;0;Create;True;0;0;False;0;None;None;True;0;False;white;Auto;False;Object;-1;Auto;Texture3D;6;0;SAMPLER2D;;False;1;FLOAT3;0,0,0;False;2;FLOAT;0;False;3;FLOAT3;0,0,0;False;4;FLOAT3;0,0,0;False;5;FLOAT;1;False;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4\nNode;AmplifyShaderEditor.SimpleAddOpNode;17;964.1799,-66.07964;Float;False;2;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;14;18.63594,59.56555;Float;False;2;2;0;FLOAT3;0,0,0;False;1;FLOAT;0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.RangedFloatNode;9;-190.5833,159.7504;Float;False;Constant;_Float0;Float
+    0;7;0;Create;True;0;0;False;0;2;0;0;0;0;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionInput;20;933.9528,-162.8013;Float;False;SDFSharpness;1;4;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.ClampOpNode;4;754.8817,-65.18024;Float;False;3;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;1;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleAddOpNode;13;37.6487,-82.68902;Float;False;4;4;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;2;FLOAT3;0,0,0;False;3;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.SimpleDivideOpNode;15;201.3865,-100.2895;Float;False;2;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;18;1153.696,-146.0253;Float;False;2;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionInput;24;143.7619,-202.2909;Float;False;SDF;10;0;False;1;0;SAMPLER3D;0;False;1;SAMPLER3D;0\nNode;AmplifyShaderEditor.WorldPosInputsNode;10;-236.6973,-164.3466;Float;False;0;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3\nNode;AmplifyShaderEditor.FunctionInput;22;-229.915,-10.37526;Float;False;SDFCenter;3;1;False;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.FunctionInput;23;-231.9149,65.62471;Float;False;SDFExtents;3;2;False;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.Vector3Node;25;-205.3472,238.9275;Float;False;Constant;_Vector0;Vector
+    0;0;0;Create;True;0;0;False;0;0,0,0;0,0,0;0;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3\nNode;AmplifyShaderEditor.FunctionOutput;0;1307.586,-135.0523;Float;False;True;Output;0;False;1;0;FLOAT;0;False;1;FLOAT;0\nWireConnection;3;0;24;0\nWireConnection;3;1;15;0\nWireConnection;17;0;4;0\nWireConnection;17;1;19;0\nWireConnection;14;0;23;0\nWireConnection;14;1;9;0\nWireConnection;4;0;3;1\nWireConnection;13;0;10;0\nWireConnection;13;1;22;0\nWireConnection;13;2;23;0\nWireConnection;13;3;25;0\nWireConnection;15;0;13;0\nWireConnection;15;1;14;0\nWireConnection;18;0;20;0\nWireConnection;18;1;17;0\nWireConnection;0;0;18;0\nASEEND*/\n//CHKSM=E3EDA9BC2791F6DE1549A3FB9B428A7C1D205708"
+  m_functionName: 
+  m_description: Reads in SDF data based on world position.  Be sure to assign the
+    proper values  for center/extents (from the sdf asset) otherwise things don't
+    line up
+  m_additionalIncludes:
+    m_additionalIncludes: []
+    m_outsideIncludes: []
+  m_additionalPragmas:
+    m_additionalPragmas: []
+    m_outsidePragmas: []
+  m_additionalDirectives:
+    m_validData: 0
+    m_isDirty: 0
+    m_moduleName: ' Additional Directives'
+    m_independentModule: 1
+    m_additionalDirectives: []
+    m_shaderFunctionDirectives: []
+    m_nativeDirectives: []
+    m_nativeDirectivesFoldout: 0
+    m_directivesSaveItems: []
+  m_nodeCategory: 3
+  m_customNodeCategory: 
+  m_previewPosition: 0
+  m_hidden: 0

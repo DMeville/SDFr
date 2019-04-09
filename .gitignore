@@ -12,3 +12,11 @@ Desktop.ini
 *.sln
 *.csproj
 *.user
+
+Assets/AmplifyShaderEditor/
+
+Assets/_TerrainAutoUpgrade/
+
+Assets/_TerrainAutoUpgrade\.meta
+
+Assets/AmplifyShaderEditor\.meta
